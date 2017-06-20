@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="直播礼物动画" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYw-4j-uua">
+                                <rect key="frame" x="50" y="537" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43137254901960786" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="VPU-m0-BNx"/>
+                                    <constraint firstAttribute="height" constant="30" id="ddn-ME-v7K"/>
+                                </constraints>
+                                <state key="normal" title="礼物1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGiftFirst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gt6-aM-Rhh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phO-Cj-B61">
+                                <rect key="frame" x="162" y="537" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KDL-IN-VLx"/>
+                                    <constraint firstAttribute="height" constant="30" id="Llm-Ja-LeR"/>
+                                </constraints>
+                                <state key="normal" title="礼物2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGiftSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3w-IS-m2k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqQ-RC-w9q">
+                                <rect key="frame" x="275" y="537" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HFM-oc-FLS"/>
+                                    <constraint firstAttribute="width" constant="50" id="Kc8-Rh-UCk"/>
+                                </constraints>
+                                <state key="normal" title="礼物3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGiftThird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSL-T1-RYO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cqQ-RC-w9q" secondAttribute="trailing" constant="50" id="19N-NS-Ymq"/>
+                            <constraint firstItem="phO-Cj-B61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKG-Sc-Mzc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="phO-Cj-B61" secondAttribute="bottom" constant="100" id="PGd-xL-OYB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SYw-4j-uua" secondAttribute="bottom" constant="100" id="h1F-FX-Rfc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cqQ-RC-w9q" secondAttribute="bottom" constant="100" id="nvG-CJ-8TO"/>
+                            <constraint firstItem="SYw-4j-uua" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="wiH-c2-vsc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
